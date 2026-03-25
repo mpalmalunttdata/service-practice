@@ -1,0 +1,17 @@
+<section class="page__hero">
+  <div class="max__container">
+    <h1>Actividades</h1>
+  </div>
+</section>
+<section class="max__container page__container activities">
+  <app-filter class="activities__search"></app-filter>
+
+  <h2>Listado de actividades</h2>
+  <div class="activities__content">
+    @for (activity of filteredActivities$ | async; track activity.id) {
+      <app-card [activity]="activity"></app-card>
+    } @empty {
+      <p>No hay actividades</p>
+    }
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<a class="card" [routerLink]="`${activity().id}`">
+  <div class="card__header">
+    <span class="card__header-type">{{ activityTypeLabel[activity().type] }}</span>
+    <div class="card__price">
+      @if (!activity().isFree) {
+        <span>{{ activity().price }}&euro;</span>
+      } @else {
+        <span>free</span>
+      }
+    </div>
+  </div>
+
+  <h3>{{ activity().title }}</h3>
+
+  <p>
+    {{ activity().description }} <span>{{ activity().duration }} min</span>
+  </p>
+  <div class="card__info">
+    <div class="card__details">
+      @for (tag of activity().tags; let i = $index; track i) {
+        <span class="card__details-type">{{ tag }}</span>
+      }
+    </div>
+  </div>
+</a>

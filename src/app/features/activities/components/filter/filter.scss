@@ -1,0 +1,38 @@
+.form__container {
+  form {
+    display: flex;
+    gap: 1rem;
+
+    input {
+      &[type='search'] {
+        min-width: 300px;
+      }
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      // &:nth-child(1) {
+      //   flex: 1;
+      // }
+
+      label {
+        color: var(--primary);
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+// label {
+//   margin: 0.5rem;
+// }
+
+// input {
+//   border: 1px solid var(--neutral-grey-light);
+//   height: 30px;
+//   border-radius: 0.25rem;
+// }

@@ -1,1 +1,184 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: oklch(66.009% 0.19203 24.005);
+  --primary-neutral: oklch(59.563% 0.10467 21.395);
+
+  --secondary: oklab(65.59899999999999% -0.06399 0.13044);
+  --neutral-gray: #666666;
+
+  --primary-light: oklch(from var(--primary) calc(l + 0.25) c h);
+  --primary-dark: oklch(from var(--primary) calc(l - 0.15) c h);
+
+  --primary-neutral-light: oklch(from var(--primary-neutral) calc(l + 0.2) calc(c - 0.06) h);
+  --primary-neutral-dark: oklch(from var(--primary-neutral) calc(l - 0.1) calc(c - 0.06) h);
+
+  --secondary-light: oklch(from var(--secondary) calc(l + 0.35) calc(c - 0.09) h);
+  --secondary-dark: oklch(from var(--secondary) calc(l - 0.2) c h);
+
+  --neutral-grey-light: #d1d1d4;
+  --neutral-grey-dark: #a7a7a9;
+
+  --neutral-white: #fff;
+  --neutral-black: rgb(58, 51, 51);
+
+  --color-text: var(--neutral-black);
+}
+
+/*reset */
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+select {
+  height: 40px;
+  width: 100%;
+  border: 1px solid var(--neutral-grey-light);
+  border-radius: 0.25rem;
+  color: var(--color-text);
+  outline-color: var(--primary-light);
+  padding: 0.25rem 0.5rem;
+}
+
+.select__wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+select {
+  padding-right: 2rem;
+  appearance: none;
+  text-transform: capitalize;
+
+  option {
+    width: 100%;
+    text-transform: capitalize;
+  }
+}
+
+.select__wrapper::after {
+  content: '▼';
+  position: absolute;
+  right: 0.5rem; /* ← ajusta separación */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* para que no bloquee el clic */
+  font-size: 0.7rem;
+  color: #8b8b8b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    'wdth' 100,
+    'YTLC' 500;
+  font-weight: 400;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--neutral-black);
+}
+
+header {
+  background-color: var(--primary);
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: var(--primary-neutral-dark);
+  color: var(--neutral-white);
+  font-size: 0.75rem;
+  padding: 0.75rem 0;
+  text-align: center;
+}
+
+.layout__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.max__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  padding-inline: 1.5rem;
+}
+
+.page__container {
+  margin-block: 1.5rem;
+}
+
+.page__hero {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: end;
+  margin-bottom: 1rem;
+  overflow: hidden;
+
+  h1 {
+    color: var(--neutral-white);
+    font-size: 4rem;
+  }
+}
+/*accesibilidad */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .max__container {
+    margin: 0 auto;
+    width: 100%;
+    padding-inline: 0.5rem;
+  }
+
+  .page__hero {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .max__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    padding-inline: 1.5rem;
+  }
+
+  .page__hero {
+    height: 300px;
+  }
+}

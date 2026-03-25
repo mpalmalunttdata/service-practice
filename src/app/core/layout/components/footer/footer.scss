@@ -1,0 +1,37 @@
+.color-palette {
+  display: flex;
+  div {
+    height: 50px;
+    width: 50px;
+  }
+
+  .primary {
+    background-color: var(--primary);
+  }
+  .primary-light {
+    background-color: var(--primary-light);
+  }
+  .primary-dark {
+    background-color: var(--primary-dark);
+  }
+
+  .primary-neutral {
+    background-color: var(--primary-neutral);
+  }
+  .primary-neutral-light {
+    background-color: var(--primary-neutral-light);
+  }
+  .primary-neutral-dark {
+    background-color: var(--primary-neutral-dark);
+  }
+
+  .secondary {
+    background-color: var(--secondary);
+  }
+  .secondary-light {
+    background-color: var(--secondary-light);
+  }
+  .secondary-dark {
+    background-color: var(--secondary-dark);
+  }
+}
