@@ -10,9 +10,13 @@
       />
     </div>
     <div>
-      <label for="search-type">Tipo </label>
+      <label for="search-type">Tipo</label>
       <div class="select__wrapper">
-        <select id="search-type" formControlName="type">
+        <select
+          id="search-type"
+          formControlName="type"
+          [class.is-empty]="form.get('type')?.value === ''"
+        >
           <option value="" selected>Todos los tipos</option>
           @for (op of options; track $index) {
             <option [value]="op.key">{{ op.value }}</option>

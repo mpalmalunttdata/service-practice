@@ -1,3 +1,5 @@
+@use './styles/mixings' as *;
+
 :root {
   --primary: oklch(66.009% 0.19203 24.005);
   --primary-neutral: oklch(59.563% 0.10467 21.395);
@@ -21,6 +23,7 @@
   --neutral-black: rgb(58, 51, 51);
 
   --color-text: var(--neutral-black);
+  --color-input: #717171;
 }
 
 /*reset */
@@ -55,9 +58,17 @@ select {
   appearance: none;
   text-transform: capitalize;
 
+  &.is-empty {
+    color: var(--color-input);
+  }
+
   option {
     width: 100%;
     text-transform: capitalize;
+
+    &:not([data-empty]) {
+      color: var(--color-input);
+    }
   }
 }
 
@@ -158,19 +169,7 @@ footer {
   border: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .max__container {
-    margin: 0 auto;
-    width: 100%;
-    padding-inline: 0.5rem;
-  }
-
-  .page__hero {
-    height: 300px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
+@include media(md) {
   .max__container {
     margin: 0 auto;
     width: 100%;

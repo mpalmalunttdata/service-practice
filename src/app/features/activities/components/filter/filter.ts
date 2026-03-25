@@ -2,11 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ActivitiesService } from '../../../../core/services/activities';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs';
-import {
-  ACTIVITIES,
-  activityTypeLabel,
-  TActivityType,
-} from '../../../../shared/models/activity.interface';
+import { ACTIVITIES } from '../../../../shared/models/activity.interface';
 
 @Component({
   selector: 'app-filter',
@@ -17,7 +13,7 @@ import {
 export class FilterComponent implements OnInit {
   activitiesService = inject(ActivitiesService);
 
-  options = Object.entries(ACTIVITIES).map(([key, value]) => ({ key, value }));
+  options = Object.entries(ACTIVITIES).map(([key, value]) => ({ key: key.toLowerCase(), value }));
 
   fb = inject(FormBuilder);
   form: FormGroup;
