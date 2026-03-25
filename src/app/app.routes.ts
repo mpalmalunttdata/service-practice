@@ -12,6 +12,12 @@ export const routes: Routes = [
   },
 
   {
+    path: 'activities-s',
+    loadComponent: () =>
+      import('./features/activities-signals/activities').then((c) => c.ActivitiesSignalsComponent),
+  },
+
+  {
     path: '*',
     redirectTo: 'activities',
   },
