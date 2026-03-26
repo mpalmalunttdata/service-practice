@@ -24,16 +24,16 @@ nav {
         &:active {
           color: var(--neutral-white);
         }
+
+        &.active {
+          border: 1px solid var(--neutral-white);
+          // background-color: rgb(58, 51, 51, 0.15);
+          color: var(--neutral-white);
+        }
       }
 
       &:hover a {
         border: 1px solid var(--neutral-white);
-      }
-
-      &.active a {
-        border: 1px solid var(--neutral-white);
-        // background-color: rgb(58, 51, 51, 0.15);
-        color: var(--neutral-white);
       }
     }
   }

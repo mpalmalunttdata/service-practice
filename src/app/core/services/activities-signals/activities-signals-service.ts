@@ -1,6 +1,7 @@
 import { computed, Injectable, signal } from '@angular/core';
 import { MOCK_ACTIVITIES } from '../../../shared/mocks/activities.mock';
 import { IActivity, IActivityFilters } from '../../../shared/models/activity.interface';
+import { delay, map, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -23,9 +24,14 @@ export class ActivitiesSignalsService {
   });
 
   setFilters(filters: IActivityFilters) {
-    console.log(filters);
     this.#searchTerm.set({ ...filters });
-    console.log(this.filteredActivities().length);
+  }
+
+  getActivityById(id: string): Observable<IActivity | null> {
+    return of(MOCK_ACTIVITIES).pipe(
+      delay(300),
+      map((list) => list.find((a) => a.id === id) ?? null),
+    );
   }
 
   private normalize(s: string) {

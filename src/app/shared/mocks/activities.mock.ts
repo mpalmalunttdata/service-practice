@@ -5,6 +5,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-001',
     title: 'Visita guiada a la Catedral',
     description: 'Tour cultural por la Catedral de Sevilla y subida a la Giralda.',
+    longDescription:
+      'Comenzaremos la visita en la Puerta del Perdón, donde el guía pondrá en contexto la Sevilla medieval y el origen de la antigua mezquita sobre la que se levantó la Catedral. A lo largo del recorrido irás reconociendo las huellas islámicas en el patio y los detalles góticos, renacentistas y barrocos del interior. Nos detendremos en las capillas más representativas para entender por qué aquí conviven devoción, poder y arte: retablos dorados, sepulcros de nobles, órganos monumentales y la luz filtrándose por las vidrieras. La explicación no será solo de fechas; hablaremos de oficios, comercio con Indias y de cómo el río y la Casa de la Contratación transformaron la ciudad. Terminaremos con la subida a la Giralda por sus rampas, pensadas para subir a caballo, hasta llegar al mirador. Desde arriba verás el trazado del centro histórico, el Alcázar, Triana y el Guadalquivir. Incluye recomendaciones para seguir explorando la zona y el mejor momento para fotos.',
     duration: 90,
     type: 'tour',
     location: { district: 'Centro', address: 'Av. de la Constitución' },
@@ -18,6 +20,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-002',
     title: 'Taller infantil de cerámica',
     description: 'Actividad creativa para niños inspirada en la cerámica sevillana.',
+    longDescription:
+      'En este taller pensado para peques curiosos, empezaremos con una breve introducción a los azulejos y la tradición alfarera de Triana, explicada con ejemplos sencillos y piezas para tocar. Después, cada niño diseñará su propio motivo (flores, geometrías, animales o su inicial) y lo trasladará a una pequeña placa de arcilla. El monitor irá guiando paso a paso: cómo amasar, cómo dar forma, cómo marcar texturas y cómo evitar que la pieza se agriete al secar. En la segunda parte aplicaremos engobes de colores y una capa de acabado para que se vea brillante. Mientras trabajan, hablaremos de los hornos, los tiempos de secado y por qué la cerámica cambia de color al cocerse. La actividad incluye materiales, delantal, limpieza final y una bolsita para llevarse la pieza. Si vienes en familia, el guía recomienda llegar 10 minutos antes y aprovechar para pasear por el puente y el mercado.',
     duration: 60,
     type: 'children',
     location: { district: 'Triana' },
@@ -31,6 +35,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-003',
     title: 'Ruta gastronómica por el centro',
     description: 'Degustación de tapas tradicionales en bares emblemáticos.',
+    longDescription:
+      'Esta ruta está diseñada para comer como un sevillano: sin prisas, de barra en barra y con historias entre tapa y tapa. Empezaremos cerca de la Plaza Nueva con una breve explicación sobre la cultura de la tapa, las horas “buenas” para pedir y cómo leer una carta de “montaditos”. La primera parada suele ser un clásico de la zona para probar una especialidad caliente (croquetas, espinacas con garbanzos o carrillada, según temporada). Seguiremos por calles estrechas del centro hacia un bar de toda la vida donde el guía recomienda pedir algo de cuchara o una fritura variada para compartir. En cada parada se incluye una consumición y una tapa, con alternativas sin alcohol y opciones vegetarianas si se avisan con antelación. Entre locales hablaremos de mercados, de la influencia del Guadalquivir en la llegada de productos y de por qué el centro mezcla tradición y nuevas propuestas. Terminaremos cerca de la Alfalfa con un toque dulce (torrija o postre típico) y recomendaciones para seguir explorando por tu cuenta.',
     duration: 120,
     type: 'food',
     location: { district: 'Centro' },
@@ -42,6 +48,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-004',
     title: 'Concierto al aire libre',
     description: 'Actuación de música en directo en un entorno natural.',
+    longDescription:
+      'Una tarde para desconectar en el Parque de María Luisa. El plan es sencillo: llegar con tiempo, escoger sitio a la sombra y dejarse llevar por un repertorio pensado para todos los públicos. Antes de empezar, el presentador suele dar una pequeña introducción sobre el ciclo de conciertos y el estilo de la banda invitada (jazz suave, versiones acústicas o música de cámara, según el día). Durante la actuación habrá pausas para moverse, hacer fotos o acercarse a los puestos de agua. El entorno es parte del espectáculo: los árboles amortiguan el ruido de la ciudad y el atardecer crea una luz perfecta para disfrutar sin pantallas. Se recomienda traer una manta o cojín, y si vienes con niños, quedarse cerca de los caminos principales. Al terminar, el guía comparte ideas para continuar la tarde: un paseo por la Plaza de España, helado en los alrededores o una visita rápida a los estanques. Actividad gratuita con aforo limitado por orden de llegada.',
     duration: 90,
     type: 'music',
     location: { district: 'Parque de María Luisa' },
@@ -54,6 +62,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-005',
     title: 'Sendero por el Guadalquivir',
     description: 'Ruta guiada por la ribera del río descubriendo fauna y flora.',
+    longDescription:
+      'La ribera del Guadalquivir es una de las mejores aulas al aire libre de Sevilla. Empezaremos en La Cartuja con una breve explicación sobre el papel del río en la ciudad: comercio, crecidas, puentes y cómo se han recuperado zonas verdes en los últimos años. Caminaremos a ritmo cómodo, con paradas frecuentes para observar aves (garzas, cormoranes o patos) y reconocer plantas de ribera. El guía lleva material de apoyo y te enseña a fijarte en señales pequeñas: huellas en el barro, sonidos, restos de semillas y cambios en la vegetación según la época. La ruta incluye un tramo de sombra y otro más abierto, ideal para fotos, y termina cerca de un mirador con vistas amplias del cauce. Se recomienda llevar agua, gorra y calzado cómodo; no es una ruta exigente, pero sí larga. Al final, recibirás sugerencias de otros paseos conectados y puntos donde parar a tomar algo sin alejarte del río.',
     duration: 150,
     type: 'nature',
     location: { district: 'La Cartuja' },
@@ -65,6 +75,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-006',
     title: 'Obra de teatro en la Alameda',
     description: 'Representación contemporánea en un teatro alternativo.',
+    longDescription:
+      'Una propuesta escénica con sabor local en uno de los espacios alternativos de la Alameda. La experiencia empieza antes de sentarte: el teatro suele abrir con antelación para que puedas tomar algo en el vestíbulo y leer el programa. La obra mezcla humor y crítica social con un lenguaje cercano, y el montaje aprovecha la proximidad del público para crear momentos muy directos. El guía recomienda fijarse en la iluminación y en la música en vivo (si la hay), porque forman parte del relato. Tras la función, es habitual que el elenco salga a saludar y se abra un pequeño coloquio informal, perfecto para quien quiera conocer la “cocina” del montaje. La entrada incluye asiento numerado y acceso al bar, con opciones sin alcohol. Si vienes por primera vez a la Alameda, te proponemos completar la noche con un paseo por las plazas cercanas y una cena ligera: es un barrio perfecto para alargar la cultura hasta tarde.',
     duration: 75,
     type: 'teatre',
     location: { district: 'Alameda' },
@@ -76,6 +88,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-007',
     title: 'Tour nocturno por el barrio de Santa Cruz',
     description: 'Recorrido por las leyendas y misterios del casco antiguo de la ciudad.',
+    longDescription:
+      'Cuando cae la noche, Santa Cruz cambia de ritmo: las calles se vacían, las sombras se alargan y el barrio se convierte en el escenario perfecto para escuchar historias. Este tour combina recorrido urbano con relatos de tradición popular: apariciones, amores imposibles, duelos, conventos y patios que guardan secretos. El guía no busca “asustar” por asustar; contextualiza cada leyenda con datos históricos y te ayuda a entender por qué surgieron esas narraciones. Caminaremos por plazas pequeñas, pasadizos y rincones silenciosos, con paradas para ver detalles que de día pasan desapercibidos: azulejos, rejas, inscripciones y antiguos accesos al Alcázar. También hablaremos de la Sevilla de los viajeros románticos y de cómo el barrio se convirtió en símbolo de la ciudad. Se recomienda calzado cómodo y una chaqueta ligera incluso en verano. El final suele ser cerca de una zona con terrazas, ideal para rematar la noche con una bebida.',
     duration: 120,
     type: 'tour',
     location: { district: 'Santa Cruz' },
@@ -87,6 +101,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-008',
     title: 'Clases de cocina andaluza',
     description: 'Aprende a preparar salmorejo, espinacas con garbanzos y más.',
+    longDescription:
+      'Una clase práctica para cocinar platos andaluces de verdad, con ingredientes fáciles de encontrar y trucos que te llevarás a casa. Empezaremos con una breve explicación del menú del día y de cómo ajustar sabores (sal, vinagre, pimentón) sin tapar el producto. Prepararemos un salmorejo cremoso desde cero: elección del tomate, punto de pan, emulsionado y guarniciones. Después pasaremos a un guiso tradicional, como espinacas con garbanzos, donde aprenderás a trabajar el comino y el ajo sin que amarguen. Según temporada, se añade una tapa extra (tortillitas, croquetas o un postre sencillo). La clase es participativa: cada persona corta, mezcla, prueba y corrige sobre la marcha con el chef. Al final, nos sentamos a comer lo preparado con una bebida incluida y una pequeña ficha de recetas. Recomendación: venir con hambre y con mente abierta, porque el objetivo es que entiendas el “por qué” de cada paso, no solo copiar una receta.',
     duration: 180,
     type: 'food',
     location: { district: 'Los Remedios' },
@@ -98,6 +114,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-009',
     title: 'Tarde de juegos tradicionales',
     description: 'Actividades para niños con juegos típicos sevillanos.',
+    longDescription:
+      'Una tarde al aire libre pensada para que los niños se muevan, rían y descubran juegos de siempre. El monitor organiza el grupo por edades y empieza con dinámicas cortas para romper el hielo. Después rotamos por estaciones: carrera de sacos, rayuela, soga, chapas, juegos de palmas y pequeñas pruebas de puntería. No hace falta experiencia: se explican las reglas de forma simple y se prioriza que todos participen. La actividad incluye descansos para beber agua y un momento “calma” con cuentos cortos y adivinanzas para recuperar energía. Si vienes con familia, hay un espacio reservado para que los adultos puedan seguir la sesión de cerca. Se recomienda gorra y protector solar; en invierno, una chaqueta ligera. Al finalizar, cada peque se lleva una tarjeta con ideas de juegos para repetir en casa o en el parque. Plan ideal para combinar con un paseo por la zona de la Macarena y una merienda.',
     duration: 90,
     type: 'children',
     location: { district: 'Macarena' },
@@ -111,6 +129,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-010',
     title: 'Concierto de flamenco íntimo',
     description: 'Recital de guitarra y cante en un patio tradicional.',
+    longDescription:
+      'Este concierto busca lo esencial del flamenco: cercanía, emoción y silencio cuando toca. El patio tradicional crea una acústica cálida, y la distancia con los artistas es mínima, lo que permite apreciar detalles que en salas grandes se pierden: la respiración del cantaor, el roce de la uña en la cuerda, el compás marcado con los nudillos. La sesión suele comenzar con una breve introducción para entender palos y ritmos (soleá, tangos, bulerías), y después se alternan cante y guitarra con momentos de palmas y jaleo medido. No es un “show” turístico; es una propuesta íntima y respetuosa, ideal si te interesa el lado más auténtico. La entrada incluye asiento asignado y una bebida. Se recomienda llegar 15 minutos antes para acomodarse y disfrutar del ambiente. Al terminar, el guía comparte sugerencias de tablaos y peñas para seguir explorando el flamenco en Sevilla según tu estilo y presupuesto.',
     duration: 70,
     type: 'music',
     location: { district: 'Centro' },
@@ -122,6 +142,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-011',
     title: 'Paseo por los Reales Alcázares',
     description: 'Explora los jardines y palacios con un guía especializado.',
+    longDescription:
+      'Los Reales Alcázares se disfrutan mejor con contexto, porque cada sala es una capa de historia. En esta visita guiada recorreremos patios y estancias donde conviven arte islámico, mudéjar y renacentista. El guía te ayudará a leer los símbolos: inscripciones, geometrías, yeserías y techos artesonados, explicando por qué Sevilla fue un puente entre culturas. En los jardines haremos paradas para identificar fuentes, plantas y pequeños rincones escondidos, y hablaremos del uso del agua como elemento de poder y de frescor. También habrá tiempo para fotos en los puntos clave y para entender cómo el palacio sigue siendo residencia real cuando la familia visita la ciudad. La ruta está pensada para evitar prisas y para que no te pierdas detalles: puertas falsas, perspectivas y motivos repetidos que cuentan historias. Al final, el guía recomienda itinerarios alternativos según tu interés (jardines, arquitectura, series de TV) y el mejor horario para evitar colas.',
     duration: 120,
     type: 'tour',
     location: { district: 'Centro' },
@@ -133,6 +155,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-012',
     title: 'Yoga en el Parque de María Luisa',
     description: 'Sesión de yoga relajante al aire libre.',
+    longDescription:
+      'Una sesión suave para empezar el día con energía y terminarlo con calma, rodeado de vegetación. La clase se adapta a distintos niveles: si es tu primera vez, el instructor te ofrece variantes sencillas; si ya practicas, podrás profundizar en respiración y alineación. Comenzaremos con unos minutos de atención al cuerpo y respiración consciente, seguidos de movilidad articular y saludos al sol a ritmo tranquilo. La parte central combina posturas de equilibrio, fuerza ligera y estiramientos, siempre con pausas para escuchar sensaciones. El entorno ayuda: el sonido del parque, la luz filtrada entre árboles y el aire fresco convierten la práctica en un pequeño descanso mental. Se recomienda traer esterilla, agua y una toalla pequeña. Al finalizar, habrá una relajación guiada corta y consejos para estirar en casa. Ideal para combinar con un paseo posterior por la Plaza de España o una visita a los estanques.',
     duration: 60,
     type: 'nature',
     location: { district: 'Parque de María Luisa' },
@@ -144,6 +168,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-013',
     title: 'Degustación de vinos andaluces',
     description: 'Cata guiada de vinos de diferentes provincias de Andalucía.',
+    longDescription:
+      'Una cata pensada para aprender sin tecnicismos y disfrutar de cada copa. Empezaremos con una introducción breve a las zonas vinícolas andaluzas (Jerez, Montilla-Moriles, Málaga, Sierra de Cádiz) y a los estilos más comunes: blancos frescos, generosos, tintos jóvenes y dulces. El sumiller te enseña a catar paso a paso: mirar, oler, probar y describir, con trucos para identificar aromas sin “inventarse” nada. Degustaremos varias referencias y las acompañaremos con pequeños maridajes (queso, frutos secos o pan con aceite), explicando por qué funcionan. También hablaremos de uvas típicas, crianza y temperatura ideal de servicio. La experiencia es participativa: puedes preguntar, comparar sensaciones y descubrir qué estilo se ajusta a tu gusto. Al final te llevas recomendaciones para comprar botellas en Sevilla y para visitar bodegas si te apetece una escapada. Actividad perfecta para un plan de tarde en el Arenal.',
     duration: 90,
     type: 'food',
     location: { district: 'Arenal' },
@@ -155,6 +181,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-014',
     title: 'Espectáculo de teatro callejero',
     description: 'Teatro improvisado en distintas plazas del centro.',
+    longDescription:
+      'Una propuesta ligera y divertida para descubrir el centro con otra mirada. El espectáculo se mueve por varias plazas y rincones, y cada parada es una escena distinta: improvisación con el público, pequeños números físicos y humor basado en situaciones cotidianas. Los actores se adaptan a lo que ocurre alrededor (un balcón que se abre, un músico que pasa, un niño que participa), así que nunca hay dos funciones iguales. El guía recomienda colocarse en semicírculo para ver bien y dejar un pasillo libre para que el montaje fluya. Aunque es gratuito, se agradece una aportación voluntaria al final para apoyar al grupo. Ideal si estás de turismo y quieres un plan corto entre visitas: dura menos de una hora y termina cerca de zonas con bares para continuar la tarde. Apto para familias y para quien quiera cultura sin formalidades.',
     duration: 45,
     type: 'teatre',
     location: { district: 'Centro' },
@@ -167,6 +195,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-015',
     title: 'Excursión por Doñana',
     description: 'Salida desde Sevilla para visitar el entorno natural de Doñana.',
+    longDescription:
+      'Una escapada de día completo para conocer Doñana con guía y transporte desde Sevilla. Salimos por la mañana desde Prado de San Sebastián y, durante el trayecto, el guía explica por qué este espacio es uno de los humedales más importantes de Europa. Ya en destino, haremos un recorrido en vehículo preparado para pistas y varias paradas para observar fauna: aves migratorias, ciervos y, con suerte, alguna especie más esquiva. También caminaremos por un tramo fácil para ver el paisaje de dunas y matorral, entendiendo cómo cambia el ecosistema según la estación. La excursión incluye tiempo para comer (picnic o restaurante, según opción) y descansos para fotos. Es una actividad larga, pero el ritmo es cómodo y está pensada para todos los públicos. Se recomienda llevar agua, protector solar y prismáticos si tienes. Al final del día, volvemos a Sevilla con recomendaciones de miradores y rutas alternativas para quien quiera repetir con otro enfoque.',
     duration: 300,
     type: 'nature',
     location: { district: 'Prado de San Sebastián' },
@@ -178,6 +208,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-016',
     title: 'Sesión de música electrónica en terraza',
     description: 'DJ set al atardecer con vistas a la ciudad.',
+    longDescription:
+      'Un plan perfecto para ver caer el sol sobre Sevilla con música de fondo. La sesión empieza suave, con un warm-up que acompaña el atardecer, y va subiendo intensidad según se encienden las luces de la ciudad. La terraza ofrece vistas abiertas y un ambiente relajado: gente local, cócteles sencillos y un DJ set que mezcla house melódico, toques funk y algún guiño a clásicos. No es una macrofiesta, sino una experiencia cómoda para charlar, bailar y disfrutar del skyline. Se recomienda llegar pronto para pillar buen sitio y aprovechar la primera hora para fotos. La entrada incluye acceso y, según la noche, un descuento en la primera consumición. Después del set puedes bajar a Triana para cenar o cruzar el río caminando y terminar la noche en el centro. Ideal si buscas ocio nocturno sin agobios.',
     duration: 120,
     type: 'music',
     location: { district: 'Triana' },
@@ -189,6 +221,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-017',
     title: 'Tour en bicicleta por el casco histórico',
     description: 'Recorrido urbano en bici descubriendo rincones únicos.',
+    longDescription:
+      'Un recorrido en bici para ver mucho en poco tiempo, sin perder el detalle. Tras una breve explicación de seguridad y ajuste de la bicicleta, salimos hacia el centro histórico por carriles y zonas tranquilas. Haremos paradas en puntos clave para entender la evolución de la ciudad: murallas, plazas, callejuelas y edificios que mezclan estilos. El guía alterna historia con consejos prácticos: dónde comer bien, qué visitar sin colas y cómo moverse por Sevilla en bici. El ritmo es moderado, con paradas frecuentes para fotos y agua, y el itinerario se adapta según el tráfico y el nivel del grupo. Incluye casco, bicicleta y asistencia básica. Ideal si es tu primera vez en la ciudad o si quieres un plan activo. Terminamos cerca del punto de salida con recomendaciones de rutas libres por el río y parques para seguir pedaleando a tu aire.',
     duration: 150,
     type: 'tour',
     location: { district: 'Centro' },
@@ -200,6 +234,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-018',
     title: 'Taller de dibujo para niños',
     description: 'Actividad artística donde aprenderán técnicas básicas de dibujo.',
+    longDescription:
+      'Un taller tranquilo y creativo para que los niños ganen confianza dibujando. Empezaremos con ejercicios cortos de línea y formas básicas para calentar la mano, y luego pasaremos a técnicas sencillas de sombreado y composición. El monitor enseña a observar: proporciones, contornos y cómo convertir objetos reales en dibujos sin frustración. Trabajaremos con lápices, rotuladores y alguna técnica mixta, y cada peque hará al menos dos láminas: una “libre” y otra guiada. La actividad incluye materiales y una carpeta para llevarse los trabajos sin que se doblen. No hace falta saber dibujar: el enfoque es aprender jugando, no competir. A mitad de sesión hay una pausa para agua y estiramientos de manos. Al final, se hace una mini exposición y cada participante explica su dibujo en un ambiente positivo. Plan ideal para combinar con una merienda por Nervión.',
     duration: 60,
     type: 'children',
     location: { district: 'Nervión' },
@@ -213,6 +249,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-019',
     title: 'Cata de quesos artesanales',
     description: 'Aprende sobre quesos andaluces acompañados de vinos locales.',
+    longDescription:
+      'Una experiencia gourmet corta pero completa para entender el mundo del queso sin complicaciones. Empezaremos con una introducción a las leches (cabra, oveja, mezcla) y a los tipos de curación, con ejemplos para oler y comparar. Probaremos varias piezas artesanales de Andalucía, desde quesos frescos y cremosos hasta curados intensos, explicando qué buscar en textura, aroma y persistencia. Cada queso se acompaña con un pequeño bocado y una bebida opcional, con sugerencias de maridaje para que entiendas por qué algunos vinos realzan sabores y otros los apagan. El guía también cuenta curiosidades sobre productores locales, corte correcto y conservación en casa. Al final tendrás una lista de recomendaciones para comprar en mercados del centro y una idea clara de qué estilos te gustan. Plan perfecto para una tarde de paseo por Sevilla con parada culinaria.',
     duration: 80,
     type: 'food',
     location: { district: 'Centro' },
@@ -224,6 +262,8 @@ export const MOCK_ACTIVITIES: IActivity[] = [
     id: 'act-020',
     title: 'Representación teatral clásica',
     description: 'Obra basada en textos clásicos en un teatro histórico.',
+    longDescription:
+      'Una función para disfrutar del teatro en su formato más elegante, en un espacio con historia. La obra parte de textos clásicos, pero el montaje los acerca al público actual con una puesta en escena cuidada: vestuario, escenografía y una dirección que enfatiza el ritmo del verso y la emoción del conflicto. Antes de levantar el telón, el guía recomienda leer una breve sinopsis para seguir mejor las relaciones entre personajes. Durante la representación, fíjate en cómo el lenguaje y los silencios construyen tensión, y en los cambios de luz que marcan los giros dramáticos. En el descanso (si lo hay) puedes visitar el vestíbulo y ver detalles arquitectónicos del teatro. La entrada incluye asiento numerado y acceso al bar. Al terminar, te llevas recomendaciones de otras salas y ciclos culturales del Arenal para seguir con planes de teatro, música y exposiciones.',
     duration: 110,
     type: 'teatre',
     location: { district: 'Arenal' },

@@ -13,10 +13,22 @@ export const routes: Routes = [
 
   {
     path: 'activities-s',
-    loadComponent: () =>
-      import('./features/activities-signals/activities').then((c) => c.ActivitiesSignalsComponent),
-  },
 
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./features/activities-signals/activities').then(
+            (c) => c.ActivitiesSignalsComponent,
+          ),
+      },
+      {
+        path: ':id',
+        loadComponent: () =>
+          import('./features/activity/activity').then((c) => c.ActivityComponent),
+      },
+    ],
+  },
   {
     path: '*',
     redirectTo: 'activities',

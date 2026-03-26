@@ -16,6 +16,7 @@ export interface IActivity {
     latitude?: number;
     longitude?: number;
   };
+  longDescription?: string;
   maxAge?: number;
   minAge?: number;
   price: number;

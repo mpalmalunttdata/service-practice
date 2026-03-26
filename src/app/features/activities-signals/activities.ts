@@ -14,8 +14,4 @@ import { ActivitiesSignalsService } from '../../core/services/activities-signals
 export class ActivitiesSignalsComponent {
   activitiesService = inject(ActivitiesSignalsService);
   filteredActivities = this.activitiesService.filteredActivities;
-
-  // ngOnInit(): void {
-  //   this.activitiesService.loadActivities().pipe(take(1)).subscribe();
-  // }
 }

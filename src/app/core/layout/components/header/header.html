@@ -2,9 +2,30 @@
   <div class="max-container">
     <nav aria-label="navegación principal">
       <ul>
-        <li><a routerLink="home">Home</a></li>
-        <li><a routerLink="activities">Activities R</a></li>
-        <li class="active"><a routerLink="activities">Activities S</a></li>
+        <li>
+          <a
+            routerLink="home"
+            [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="activities"
+            [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Activities R</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="activities-s"
+            [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Activities S</a
+          >
+        </li>
         <li><a routerLink="contact">Contact</a></li>
       </ul>
     </nav>

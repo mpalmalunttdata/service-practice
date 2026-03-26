@@ -1,0 +1,54 @@
+<section class="page__hero">
+  <div class="max__container">
+    <h1>{{ activity.value()?.title }}</h1>
+  </div>
+</section>
+<section class="max__container page__container activities">
+  <div class="activity__layout">
+    <div class="activity__content">
+      @if (activity.isLoading()) {
+        <p>Cargando...</p>
+      } @else if (activity.error()) {
+        <p>Error: {{ activity.error() }}</p>
+      } @else if (activity.value(); as a) {
+        <p>{{ a.longDescription }}</p>
+      } @else {
+        <p>No encontrada</p>
+      }
+    </div>
+
+    @if (activity.value(); as a) {
+      <aside class="activity__aside">
+        <button type="button" value="">Reserva ahora</button>
+        <h2>Información</h2>
+        <ul>
+          <li>
+            <span>Duración:</span> <span>{{ a.duration }} min</span>
+          </li>
+          <li>
+            <span>Precio:</span>
+            <span>
+              @if (a.isFree) {
+                Gratis
+              } @else {
+                {{ a.price }} &euro;
+              }
+            </span>
+          </li>
+        </ul>
+        <h2>Detalles</h2>
+        <ul>
+          <li>
+            <span>Tipo:</span> <span>{{ a.type }}</span>
+          </li>
+          <li>
+            <span>Zona:</span> <span>{{ a.location?.district }}</span>
+          </li>
+          <li>
+            <span>Rating:</span> <span>{{ a.rating }} / 5</span>
+          </li>
+        </ul>
+      </aside>
+    }
+  </div>
+</section>
