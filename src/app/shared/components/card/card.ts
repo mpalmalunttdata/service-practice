@@ -1,6 +1,6 @@
 import { Component, input, InputSignal } from '@angular/core';
-import { IActivity, activityTypeLabel } from '../../../../shared/models/activity.interface';
 import { RouterLink } from '@angular/router';
+import { activityTypeLabel, IActivity } from '../../models/activity.interface';
 
 @Component({
   selector: 'app-card',

@@ -12,9 +12,9 @@ nav {
       font-size: 0.85rem;
 
       a {
-        border: 1px solid var(--primary);
+        border: 1px solid var(--neutral-white);
         border-radius: 2rem;
-        color: var(--neutral-white);
+        color: var(--neutral-black);
         display: inline-block;
         text-decoration: none;
         padding: 0.4rem 0.75rem;
@@ -22,18 +22,18 @@ nav {
 
         &:hover,
         &:active {
-          color: var(--neutral-white);
+          color: var(--primary);
         }
 
         &.active {
-          border: 1px solid var(--neutral-white);
-          // background-color: rgb(58, 51, 51, 0.15);
-          color: var(--neutral-white);
+          border: 1px solid var(--primary);
+          border-radius: 2rem;
+          color: var(--primary);
         }
       }
 
       &:hover a {
-        border: 1px solid var(--neutral-white);
+        border: 1px solid var(--primary);
       }
     }
   }

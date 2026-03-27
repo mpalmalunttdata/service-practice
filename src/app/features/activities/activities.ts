@@ -1,9 +1,9 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
-import { CardComponent } from './components/card/card';
 import { take } from 'rxjs';
-import { FilterComponent } from './components/filter/filter';
 import { ActivitiesService } from '../../core/services/activities';
+import { CardComponent } from '../../shared/components/card/card';
+import { FilterComponent } from './components/filter/filter';
 
 @Component({
   selector: 'app-activities',

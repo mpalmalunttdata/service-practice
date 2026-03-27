@@ -1,28 +1,35 @@
-.page__hero {
-  background: url('https://images.pexels.com/photos/4605666/pexels-photo-4605666.jpeg') 0% 50%;
-  background-color: color-mix(in oklch, var(--primary), transparent 25%);
-  background-blend-mode: soft-light;
-  background-size: cover;
-
-  h1 {
-    margin-bottom: 1rem;
-    font-weight: 400;
-  }
-}
+@use '../../../styles/mixins' as *;
 
 .activities {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 
   &__search {
     display: block;
     margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
   }
 
   &__content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
+  }
+
+  @include media(sm) {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  @include media(md) {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 1.5rem;
+    }
   }
 }
